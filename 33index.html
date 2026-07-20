@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقنية وأناقة | إدارة ومنتجات</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- 🔗 الهيدر والقائمة العلوية -->
+    <header class="sticky top-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#8B5CF6] text-white flex items-center justify-center font-bold text-xl rounded-xl shadow-lg shadow-[#8B5CF6]/30">ت</div>
+                <span class="text-xl font-bold tracking-wide text-gray-900 dark:text-white">تقنية وأناقة</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-[#8B5CF6]">الرئيسية</a>
+                <a href="#products-showcase" class="text-gray-600 dark:text-gray-300 hover:text-[#8B5CF6]">المنتجات</a>
+                <a href="/portfolio-management" class="text-gray-600 dark:text-gray-300 hover:text-[#8B5CF6] flex items-center gap-1">
+                    <i class="fa-regular fa-folder text-[#8B5CF6]"></i> إدارة الأعمال
+                </a>
+                <a href="#products-management" class="px-3 py-1.5 rounded-lg bg-[#8B5CF6]/10 text-[#8B5CF6] font-medium flex items-center gap-1 border border-[#8B5CF6]/20">
+                    <i class="fa-solid fa-gear spin-hover"></i> إدارة المنتجات
+                </a>
+            </nav>
+            <button onclick="toggleDarkMode()" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">
+                <i class="fa-solid fa-moon dark:hidden"></i><i class="fa-solid fa-sun hidden dark:inline"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 🚀 قسم الترحيب (Hero Section) -->
+    <section class="relative overflow-hidden py-20 lg:py-32 bg-gradient-to-b from-purple-500/5 via-transparent to-transparent">
+        <div class="max-w-7xl px-4 mx-auto text-center relative z-10">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-6">
+                اكتشف عالم <span class="text-[#8B5CF6]">تقنية وأناقة</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400 mb-10">
+                تقنية وأناقة - وجهتك المفضلة للحصول على أفضل المنتجات بأسعار منافسة. نجمع لك بين أحدث الابتكارات التقنية والفخامة العصرية.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#products-showcase" class="px-8 py-4 bg-[#8B5CF6] hover:bg-[#7c4fe3] text-white font-semibold rounded-xl shadow-lg shadow-[#8B5CF6]/20 transition-all transform hover:-translate-y-0.5">تسوق الآن</a>
+                <a href="#products-management" class="px-8 py-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 font-semibold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">لوحة الإدارة</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⭐ قسم لماذا تختارنا -->
+    <section class="py-16 border-y border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50">
+        <div class="max-w-7xl px-4 mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">لماذا تختار تقنية وأناقة</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm text-center">
+                    <div class="w-12 h-12 bg-[#8B5CF6]/10 text-[#8B5CF6] flex items-center justify-center text-xl rounded-xl mx-auto mb-4"><i class="fa-solid fa-bolt"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">أداء وجودة عالية</h3>
+                    <p class="text-gray-500 text-sm">نضمن لك الحصول على منتجات أصلية ذات جودة تصنيع ممتازة وتكنولوجيا متطورة.</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm text-center">
+                    <div class="w-12 h-12 bg-[#8B5CF6]/10 text-[#8B5CF6] flex items-center justify-center text-xl rounded-xl mx-auto mb-4"><i class="fa-solid fa-gem"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">تصميم فاخر وأنيق</h3>
+                    <p class="text-gray-500 text-sm">منتجاتنا لا تقدم أداءً قوياً فحسب، بل تأتي بمظهر فاخر يناسب أسلوب حياتك.</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm text-center">
+                    <div class="w-12 h-12 bg-[#8B5CF6]/10 text-[#8B5CF6] flex items-center justify-center text-xl rounded-xl mx-auto mb-4"><i class="fa-solid fa-tags"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">أسعار منافسة</h3>
+                    <p class="text-gray-500 text-sm">توازن مثالي بين القيمة العالية والسعر المناسب مع عروض مستمرة حصرياً لدينا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🛒 معرض المنتجات (للعملاء) -->
+    <section id="products-showcase" class="py-20 max-w-7xl px-4 mx-auto">
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <h2 class="text-3xl font-bold">أحدث منتجاتنا</h2>
+                <p class="text-gray-500 text-sm mt-1">تصفح التشكيلة المميزة المتاحة حالياً</p>
+            </div>
+        </div>
+        <div id="products-cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- سيتم توليد كروت المنتجات هنا بواسطة JavaScript -->
+        </div>
+    </section>
+
+    <!-- 🛠️ 1️⃣ صفحة إدارة المنتجات -->
+    <section id="products-management" class="py-20 bg-gray-100 dark:bg-gray-900/30 border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl px-4 mx-auto">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
+                <div>
+                    <h2 class="text-2xl font-bold flex items-center gap-2">
+                        <i class="fa-solidxl fa-gear text-[#8B5CF6]"></i> لوحة إدارة المنتجات
+                    </h2>
+                    <p class="text-sm text-gray-500 mt-1">إضافة، تعديل، وحذف منتجات المتجر بكل سهولة.</p>
+                </div>
+                <button onclick="openModal('add')" class="px-5 py-2.5 bg-[#8B5CF6] hover:bg-[#7c4fe3] text-white font-medium rounded-xl flex items-center gap-2 shadow-lg shadow-[#8B5CF6]/20 transition-all">
+                    <i class="fa-solid fa-plus"></i> إضافة منتج جديد
+                </button>
+            </div>
+
+            <!-- جدول عرض المنتجات (متجاوب 100%) -->
+            <div class="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-right border-collapse">
+                        <thead>
+                            <tr class="bg-gray-50 dark:bg-gray-800/50 border-b border-gray-200 dark:border-gray-800 text-gray-500 text-sm">
+                                <th class="p-4">المنتج</th>
+                                <th class="p-4">الفئة</th>
+                                <th class="p-4">السعر</th>
+                                <th class="p-4">التقييم</th>
+                                <th class="p-4 text-center">العمليات</th>
+                            </tr>
+                        </thead>
+                        <tbody id="products-table-body" class="divide-y divide-gray-100 dark:divide-gray-800 text-sm">
+                            <!-- سيتم توليد الأسطر هنا ديناميكياً -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ➕ / ✏️ نافذة النموذج الموحد (إضافة وتعديل منتج) -->
+    <div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm hidden animate-fade-in">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl max-w-lg w-full p-6 border border-gray-200 dark:border-gray-800 shadow-2xl relative">
+            <h3 id="modal-title" class="text-xl font-bold mb-4 text-gray-900 dark:text-white">إضافة منتج جديد</h3>
+            
+            <form id="product-form" onsubmit="handleFormSubmit(event)">
+                <input type="hidden" id="product-id">
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold mb-1 text-gray-500">اسم المنتج *</label>
+                        <input type="text" id="prod-name" required class="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:border-[#8B5CF6]">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold mb-1 text-gray-500">وصف المنتج *</label>
+                        <textarea id="prod-desc" rows="3" required class="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:border-[#8B5CF6]"></textarea>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold mb-1 text-gray-500">السعر (بالريال) *</label>
+                            <input type="number" id="prod-price" step="0.01" required class="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:border-[#8B5CF6]">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold mb-1 text-gray-500">التقييم (1-5) *</label>
+                            <input type="number" id="prod-rating" min="1" max="5" step="0.1" required class="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:border-[#8B5CF6]">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold mb-1 text-gray-500">الفئة *</label>
+                        <select id="prod-category" required class="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:border-[#8B5CF6]">
+                            <option value="إلكترونيات">إلكترونيات</option>
+                            <option value="أزياء">أزياء</option>
+                            <option value="إكسسوارات">إكسسوارات</option>
+                            <option value="أدوات تقنية">أدوات تقنية</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold mb-1 text-gray-500">رابط الصورة *</label>
+                        <input type="url" id="prod-image" required class="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:border-[#8B5CF6]" placeholder="https://example.com/image.jpg">
+                    </div>
+                </div>
+
+                <div class="flex justify-end gap-3 mt-6">
+                    <button type="button" onclick="closeModal()" class="px-4 py-2 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-xl font-medium transition-all">إلغاء</button>
+                    <button type="submit" id="modal-submit-btn" class="px-5 py-2 bg-[#8B5CF6] hover:bg-[#7c4fe3] text-white rounded-xl font-medium shadow-lg shadow-[#8B5CF6]/20 transition-all">حفظ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 📢 إشعارات النجاح أو الخطأ التلقائية -->
+    <div id="toast" class="fixed bottom-5 left-5 z-50 bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <i id="toast-icon" class="fa-solid fa-circle-check text-emerald-500"></i>
+        <span id="toast-message" class="text-sm font-medium">تمت العملية بنجاح!</span>
+    </div>
+
+    <!-- 📢 قسم الدعوة للإجراء والتذييل -->
+    <footer class="bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800 mt-20">
+        <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+            <h3 class="text-2xl font-bold mb-4">جاهز لبدء التسوق مع تقنية وأناقة؟</h3>
+            <p class="text-sm text-gray-500 max-w-md mx-auto mb-8">تقنية وأناقة - وجهتك المفضلة للحصول على أفضل المنتجات بأسعار منافسة</p>
+            <div class="w-full h-px bg-gray-200 dark:bg-gray-800 my-6"></div>
+            <p class="text-xs text-gray-400">&copy; 2026 جميع الحقوق محفوظة لـ متجر تقنية وأناقة.</p>
+        </div>
+    </footer>
+
+    <!-- 🧠 JavaScript Engine لإدارة العمليات بالكامل -->
+    <script>
+        // 1️⃣ البيانات الأولية للمنتجات
+        let initialProducts = [
+            { id: 1, name: "ساعة ذكية فاخرة V2", desc: "ساعة ذكية تجمع بين التصميم الكلاسيكي الأنيق وأحدث الحساسات الرياضية الذكية.", price: 599, rating: 4.8, category: "إلكترونيات", image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80" },
+            { id: 2, name: "سماعات لاسلكية محيطية", desc: "صوت نقي عالي الدقة مع خاصية إلغاء الضوضاء الفعالة وبطارية تدوم 40 ساعة.", price: 349, rating: 4.5, category: "أدوات تقنية", image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" },
+            { id: 3, name: "حقيبة جلدية للأجهزة التقنية", desc: "مقاومة للماء ومصممة بأسلوب عصري فاخر يتسع للحاسوب المحمول وكافة ملحقاته.", price: 220, rating: 4.9, category: "إكسسوارات", image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80" }
+        ];
+
+        // تحميل البيانات من LocalStorage أو استخدام البيانات الأولية
+        let products = JSON.parse(localStorage.getItem('my_products')) || initialProducts;
+
+        // 2️⃣ رندر وتحديث العرض في الواجهات
+        function renderUI() {
+            const tableBody = document.getElementById('products-table-body');
+            const cardsContainer = document.getElementById('products-cards-container');
+            
+            tableBody.innerHTML = '';
+            cardsContainer.innerHTML = '';
+
+            products.forEach(product => {
+                // إضافة السطر للجدول الإداري
+                tableBody.innerHTML += `
+                    <tr class="hover:bg-gray-50/50 dark:hover:bg-gray-800/30 transition-colors">
+                        <td class="p-4 flex items-center gap-3">
+                            <img src="${product.image}" class="w-10 h-10 object-cover rounded-lg border border-gray-200 dark:border-gray-700" onerror="this.src='https://placehold.co/100'">
+                            <div>
+                                <div class="font-semibold text-gray-900 dark:text-white">${product.name}</div>
+                                <div class="text-xs text-gray-400 max-w-[200px] truncate">${product.desc}</div>
+                            </div>
+                        </td>
+                        <td class="p-4"><span class="px-2.5 py-1 text-xs rounded-full bg-gray-100 dark:bg-gray-800 font-medium">${product.category}</span></td>
+                        <td class="p-4 font-semibold text-[#8B5CF6]">${product.price} ر.س</td>
+                        <td class="p-4 text-amber-500"><i class="fa-solid fa-star text-xs"></i> ${product.rating}</td>
+                        <td class="p-4 text-center">
+                            <div class="flex justify-center gap-2">
+                                <button onclick="openModal('edit', ${product.id})" class="p-2 text-blue-500 hover:bg-blue-500/10 rounded-lg transition-all" title="تعديل"><i class="fa-solid fa-pen"></i></button>
+                                <button onclick="deleteProduct(${product.id})" class="p-2 text-red-500 hover:bg-red-500/10 rounded-lg transition-all" title="حذف"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+
+                // إضافة الكارت لمعرض العملاء العادي
+                cardsContainer.innerHTML += `
+                    <div class="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                        <div class="relative pt-[75%] bg-gray-100 overflow-hidden">
+                            <img src="${product.image}" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='https://placehold.co/400'">
+                            <span class="absolute top-3 right-3 px-2 py-1 bg-black/60 text-white text-xs font-semibold rounded-lg backdrop-blur-md">${product.category}</span>
+                        </div>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start gap-2 mb-2">
+                                <h3 class="font-bold text-lg line-clamp-1">${product.name}</h3>
+                                <div class="flex items-center gap-1 text-amber-500 text-sm font-semibold shrink-0">
+                                    <i class="fa-solid fa-star text-xs"></i> <span>${product.rating}</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 mb-4 flex-grow">${product.desc}</p>
+                            <div class="flex justify-between items-center mt-auto pt-3 border-t border-gray-100 dark:border-gray-800">
+                                <span class="text-xl font-bold text-[#8B5CF6]">${product.price} <span class="text-xs font-normal">ر.س</span></span>
+                                <button class="p-2.5 rounded-xl bg-[#8B5CF6] text-white hover:bg-[#7c4fe3] transition-all"><i class="fa-solid fa-cart-shopping text-sm"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            localStorage.setItem('my_products', JSON.stringify(products));
+        }
+
+        // 3️⃣ النوافذ المنبثقة (Modal Setup)
+        function openModal(mode, id = null) {
+            const modal = document.getElementById('product-modal');
+            const title = document.getElementById('modal-title');
+            const form = document.getElementById('product-form');
+            
+            form.reset();
+            document.getElementById('product-id').value = '';
+            modal.classList.remove('hidden');
+
+            if (mode === 'add') {
+                title.innerText = 'إضافة منتج جديد';
+                document.getElementById('modal-submit-btn').innerText = 'حفظ المنتج';
+            } else if (mode === 'edit') {
+                title.innerText = 'تعديل بيانات المنتج';
+                document.getElementById('modal-submit-btn').innerText = 'تحديث التغييرات';
+                const prod = products.find(p => p.id === id);
+                if (prod) {
+                    document.getElementById('product-id').value = prod.id;
+                    document.getElementById('prod-name').value = prod.name;
+                    document.getElementById('prod-desc').value = prod.desc;
+                    document.getElementById('prod-price').value = prod.price;
+                    document.getElementById('prod-rating').value = prod.rating;
+                    document.getElementById('prod-category').value = prod.category;
+                    document.getElementById('prod-image').value = prod.image;
+                }
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('product-modal').classList.add('hidden');
+        }
+
+        // 4️⃣ معالجة الإضافة والتحديث الحقول المعبأة مسبقاً
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const id = document.getElementById('product-id').value;
+            const name = document.getElementById('prod-name').value;
+            const desc = document.getElementById('prod-desc').value;
+            const price = parseFloat(document.getElementById('prod-price').value);
+            const rating = parseFloat(document.getElementById('prod-rating').value);
+            const category = document.getElementById('prod-category').value;
+            const image = document.getElementById('prod-image').value;
+
+            if (id) {
+                // وضع التعديل
+                products = products.map(p => p.id == id ? { id: parseInt(id), name, desc, price, rating, category, image } : p);
+                showToast("تم تحديث بيانات المنتج بنجاح!", "success");
+            } else {
+                // وضع الإضافة
+                const newProd = { id: Date.now(), name, desc, price, rating, category, image };
+                products.push(newProd);
+                showToast("تم إضافة المنتج الجديد بنجاح إلى المتجر!", "success");
+            }
+            renderUI();
+            closeModal();
+        }
+
+        // 5️⃣ نافذة تأكيد الحذف
+        function deleteProduct(id) {
+            if (confirm("هل أنت متأكد تماماً من رغبتك في حذف هذا المنتج من لوحة المتجر؟")) {
+                products = products.filter(p => p.id !== id);
+                renderUI();
+                showToast("تم حذف المنتج بنجاح من قاعدة البيانات.", "error");
+            }
+        }
+
+        // 6️⃣ إشعارات الـ Toast السريعة
+        function showToast(message, type) {
+            const toast = document.getElementById('toast');
+            const icon = document.getElementById('toast-icon');
+            document.getElementById('toast-message').innerText = message;
+            
+            if(type === 'error') {
+                icon.className = "fa-solid fa-circle-exclamation text-red-500";
+            } else {
+                icon.className = "fa-solid fa-circle-check text-emerald-500";
+            }
+            
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3500);
+        }
+
+        // 7️⃣ تبديل الـ Dark/Light Mode
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+        }
+
+        // تشغيل الرندر عند تحميل الصفحة أول مرة
+        document.addEventListener('DOMContentLoaded', renderUI);
+    </script>
+</body>
+</html>
